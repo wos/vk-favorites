@@ -4,8 +4,7 @@
   "description": "Download favorite images from vk",
   "main": "index.js",
   "scripts": {
-    "start:back": "node ./src/backend/index.js",
-    "start:front": "node ./src/backend/index.js"
+    "start:back": "./node_modules/nodemon/bin/nodemon.js ./src/backend/index.js"
   },
   "author": "",
   "license": "ISC",
