@@ -1,26 +1,49 @@
 {
-  "name": "vk-favorites",
-  "version": "0.0.1",
-  "description": "Download favorite images from vk",
-  "main": "index.js",
-  "scripts": {
-    "start:back": "./node_modules/nodemon/bin/nodemon.js ./src/backend/index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.19.0",
-    "connect-memcached": "^1.0.0",
-    "cookie-parser": "^1.4.4",
-    "express": "^4.16.4",
-    "express-session": "^1.16.1",
-    "mongoose": "^5.5.5",
-    "nodemon": "^1.19.0",
-    "passport": "^0.4.0",
-    "passport-vk-strategy": "^1.0.0",
-    "passport-vkontakte": "^0.3.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "name": "vk-favorites",
+    "version": "0.0.1",
+    "description": "Download favorite images from vk",
+    "main": "index.js",
+    "scripts": {
+        "start:back": "./node_modules/nodemon/bin/nodemon.js ./src/backend/index.js",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "archiver": "^3.0.0",
+        "axios": "^0.18.0",
+        "body-parser": "^1.19.0",
+        "connect-memcached": "^1.0.0",
+        "cookie-parser": "^1.4.4",
+        "express": "^4.16.4",
+        "express-session": "^1.16.1",
+        "http-proxy-middleware": "^0.19.1",
+        "mongoose": "^5.5.5",
+        "nodemon": "^1.19.0",
+        "passport": "^0.4.0",
+        "passport-vk-strategy": "^1.0.0",
+        "passport-vkontakte": "^0.3.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "^3.0.1"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "proxy": "http://localhost:3001"
 }
